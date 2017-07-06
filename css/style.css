@@ -89,27 +89,39 @@ header nav ol li a {
   font-size: 1.25em;
 }
 
-/*Mission*/
-
-#mission {
-  width: 100%;
+/*Sections*/
+#mission,
+#featured,
+#location {
+  height: 800px;
+  width: auto;
 }
 
+
+/*Mission*/
+
 .hero {
-  height: 700px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   /*Cover*/
-  background-image: url("../img/img-mission-background.jpg");
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#mission .hero {
+  background-image: url("../img/img-mission-background.jpg");
+}
+
+#location .hero {
+  background-image: url("../img/img-locations-background.jpg");
 }
 
 .hero .overlay {
@@ -125,7 +137,7 @@ header nav ol li a {
 
 #featured {
   margin: 100px auto;
-  height: 700px;
+  overflow: scroll;
 }
 
 .monthly {
@@ -137,7 +149,7 @@ header nav ol li a {
 }
 
 .tea {
-  padding: 20px 30px;
+  padding: 10px 20px;
   flex: 0 1 300px;
 }
 
@@ -147,7 +159,27 @@ header nav ol li a {
   border-radius: 10px;
 }
 
+/*Featured*/
 
+#location {
+  margin: 100px auto;
+}
+
+.addresses {
+  width: 80%;
+  margin: 100px 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.address {
+  flex: 0 0 220px;
+  height: 220px;
+  margin: 20px;
+  padding: 50px;
+  background-color: black;
+}
 
 
 
