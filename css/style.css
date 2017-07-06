@@ -1,6 +1,9 @@
 /*Global*/
 
 * {
+  /*
+border: 1px solid red;
+*/
 }
 
 body, html {
@@ -13,10 +16,12 @@ body {
   background-color: black;
 }
 
-p, ol, ul, li, a {
+body, a {
   font-family: Helvetica, sans-serif;
   color: seashell;
+  text-align: center;
 }
+
 
 /*Typography*/
 
@@ -48,18 +53,19 @@ p {
   font-size: 0.875em;
 }
 
-/*Images*/
+
+/*Content*/
 
 .logo {
   height: 50px;
   margin: 10px;
 }
 
-/*Content*/
-
 header {
   height: 69px;
   width: 100%;
+  z-index: 50;
+  background-color: black;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -83,6 +89,63 @@ header nav ol li a {
   font-size: 1.25em;
 }
 
+/*Mission*/
+
+#mission {
+  width: 100%;
+}
+
+.hero {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  /*Cover*/
+  background-image: url("../img/img-mission-background.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero .overlay {
+  width: 100%;
+  padding: 20px;
+  margin: auto 0;
+  opacity: 0.9;
+  color: white;
+  background-color: black;
+}
+
+/*Featured*/
+
+#featured {
+  margin: 100px auto;
+  height: 700px;
+}
+
+.monthly {
+  padding: 0 50px;
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.tea {
+  padding: 20px 30px;
+  flex: 0 1 300px;
+}
+
+.tea img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
 
 
 
