@@ -201,7 +201,7 @@ header nav ol li a {
 
 /*Footer*/
 
-.copyright {
+p.copyright {
   text-align: left;
   margin-left: 25px;
 }
