@@ -10,9 +10,12 @@ body, html {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
   background-color: black;
-  opacity: 1.0;
+}
+
+p, ol, ul, li, a {
+  font-family: Helvetica, sans-serif;
+  color: seashell;
 }
 
 /*Typography*/
@@ -49,11 +52,36 @@ p {
 
 .logo {
   height: 50px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 /*Content*/
 
+header {
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
+}
+
+header nav ol {
+  margin-right: -50px;
+  margin-top: 30px;
+  width: 400px;
+  list-style: none;
+  float: right;
+  display: inline-flex;
+  text-overflow: clip;
+}
+
+header nav ol li a {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.25em;
+}
 
 
 
