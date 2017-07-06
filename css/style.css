@@ -89,19 +89,20 @@ header nav ol li a {
   font-size: 1.25em;
 }
 
+
 /*Sections*/
-#mission,
-#featured,
-#location {
-  height: 800px;
+
+#mission, #featured, #location {
+  padding-top: 70px;
   width: auto;
+  height: auto;
+  margin: 0 auto;
 }
 
 
 /*Mission*/
 
 .hero {
-  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -118,26 +119,41 @@ header nav ol li a {
 
 #mission .hero {
   background-image: url("../img/img-mission-background.jpg");
+  height: 700px;
 }
 
 #location .hero {
   background-image: url("../img/img-locations-background.jpg");
+  height: 700px;
+}
+
+@media screen and (max-width: 900px) {
+  #location .hero {
+    height: auto;
+  }
 }
 
 .hero .overlay {
   width: 100%;
   padding: 20px;
   margin: auto 0;
-  opacity: 0.9;
   color: white;
   background-color: black;
 }
+
+.transparent {
+  opacity: 0.9;
+}
+
+.rounded, .tea img {
+  border-radius: 6px;
+}
+
 
 /*Featured*/
 
 #featured {
   margin: 100px auto;
-  overflow: scroll;
 }
 
 .monthly {
@@ -156,35 +172,39 @@ header nav ol li a {
 .tea img {
   width: 300px;
   height: 200px;
-  border-radius: 10px;
 }
+
 
 /*Featured*/
 
-#location {
-  margin: 100px auto;
+#location {}
+
+.title {
+  position: absolute;
+  z-index: 10;
+  margin: 70px 0;
 }
 
 .addresses {
-  width: 80%;
-  margin: 100px 50px;
+  margin-top: 200px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .address {
-  flex: 0 0 220px;
-  height: 220px;
-  margin: 20px;
+  flex: 1 auto;
+  height: 200px;
   padding: 50px;
+  margin: 20px;
   background-color: black;
 }
 
+/*Footer*/
 
-
-
-
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+}
 
 
 /**/
